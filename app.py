@@ -133,9 +133,9 @@ def show_orders():
 
     def colour_row(row):
         if "Overdue" in row["Time left"]:
-            return ["background-color: #5c1f1f"] * len(row)
+            return ["background-color: #f8d7da; color: #5c1f1f"] * len(row)
         if row["Priority"]:
-            return ["background-color: #5c4a1f"] * len(row)
+            return ["background-color: #fff3cd; color: #5c4a1f"] * len(row)
         return [""] * len(row)
 
     st.caption(f"Showing {len(table)} of {len(orders)} orders. Open orders first, shipped last. Red = overdue, gold = priority.")
@@ -303,7 +303,7 @@ def show_stock_issues():
 
     def colour(row):
         if row["Action needed"] != "OK":
-            return ["background-color: #5c4a1f"] * len(row)
+            return ["background-color: #fff3cd; color: #5c4a1f"] * len(row)
         return [""] * len(row)
 
     flagged = int((table["Action needed"] != "OK").sum())
