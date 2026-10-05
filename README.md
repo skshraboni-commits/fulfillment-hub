@@ -4,12 +4,6 @@ A simple fulfillment operations app for XYZ, an e-commerce business that
 currently runs its warehouse on spreadsheets and shared folders.
 Built as a take-home project for an Operations Analyst role.
 
-**Live app:** https://fulfillment-app-xyz.streamlit.app/
-
-> Free hosting puts the app to sleep when nobody has visited for a while.
-> If you see a "Yes, get this app back up" button, click it and wait a
-> few seconds.
-
 ## Problem
 
 XYZ ships about 200-300 orders a day with a small office team and
